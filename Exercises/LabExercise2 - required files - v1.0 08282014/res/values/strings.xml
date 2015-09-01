@@ -1,0 +1,20 @@
+<resources>
+	<string name="app_name">Member Report</string>
+	<string name="item_to_buy">What do you want to buy?</string>
+	<string name="title_activity_edit">User Details</string>
+	<string name="done">Done</string>
+	<string name="action_edit">Edit</string>
+	<string name="action_settings">Setting</string>
+	<string name="action_delete">Delete</string>
+	<string name="title_text">Member List</string>
+	<string name="create_member_text">Create Mamber</string>
+	<string name="member_list_text">Create Mamber</string>
+
+	<string name="user_detail_title_text">User Details</string>
+	
+	<string name="table_text">Name	Age	Address</string>
+
+	<string name="userdetail_table_text">Territory	Desc	SaleForce</string>
+	
+	
+</resources>

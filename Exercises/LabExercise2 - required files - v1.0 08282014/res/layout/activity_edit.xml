@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateEmp" >
+    
+       <TextView
+        android:id="@+id/titleText"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+        android:text="@string/create_member_text"
+        android:textStyle='bold'
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:background="@color/activityHeadingBackground"
+        >
+    </TextView>
+    
+    
+    <TableLayout 
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+ 
+    <!-- 2 columns -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/textView1"
+            android:text="Name:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+	   <EditText
+	       android:id="@+id/memberName"
+		   android:layout_width="match_parent"
+		   android:layout_height="wrap_content"
+		   android:singleLine="true"
+		   android:imeOptions="actionDone"
+		   android:textSize="19sp"
+		   android:background="@color/table_row_color"
+		   android:padding="8dp"
+		   android:ems="10" >
+		</EditText>
+    </TableRow>
+    
+        <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/textView2"
+            android:text="Age:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+	   <EditText
+	       android:id="@+id/memberAge"
+		   android:layout_width="match_parent"
+		   android:layout_height="wrap_content"
+		   android:singleLine="true"
+		   android:imeOptions="actionDone"
+		   android:textSize="19sp"
+		   android:background="@color/table_row_color"
+		   android:padding="8dp"
+		   android:ems="10" >
+		</EditText>
+    </TableRow>
+    
+     <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/textView3"
+            android:text="Address:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        
+		<EditText
+	        android:id="@+id/memberAddress"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="top|left"
+	        android:lines="20"
+	        android:minLines="5"
+	        android:scrollHorizontally="false"
+	        android:scrollbars="vertical"
+	        android:singleLine="false"
+	        android:background="@color/table_row_color" />
+   </TableRow>
+   
+   <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dip" >
+ 
+        <Button
+            android:id="@+id/memberUpdateButton"
+            android:layout_column="1"
+            android:text="Update" />
+    </TableRow>
+
+</TableLayout>
+    
+    
+
+</LinearLayout>
